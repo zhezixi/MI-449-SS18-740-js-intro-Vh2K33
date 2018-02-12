@@ -6,10 +6,7 @@ var aud1 = document.getElementById("myAudio1");
 var aud2 = document.getElementById("myAudio2");
 var aud3 = document.getElementById("myAudio3");
 
-var playAud = function (a) {
-	a.play()
-}
 
-buttonElement1.addEventListener('click', playAud(aud1));
-buttonElement2.addEventListener('click', playAud(aud2));
-buttonElement3.addEventListener('click', playAud(aud3));
+buttonElement1.addEventListener('click', aud1.play());
+buttonElement2.addEventListener('click', aud2.play());
+buttonElement3.addEventListener('click', aud3.play());
