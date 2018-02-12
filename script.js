@@ -6,8 +6,8 @@ var aud1 = document.getElementById("myAudio1");
 var aud2 = document.getElementById("myAudio2");
 var aud3 = document.getElementById("myAudio3");
 
-function playAud() {
-	aud.play();
+var playAud = function (a) {
+	a.play()
 }
 
 buttonElement1.addEventListener('click', playAud(aud1));
