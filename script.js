@@ -2,13 +2,24 @@
 var buttonElement1 = document.getElementById('First-button');
 var buttonElement2 = document.getElementById('Second-button');
 var buttonElement3 = document.getElementById('Third-button');
-var aud1 = document.getElementById("myAudio1");
-var aud2 = document.getElementById("myAudio2");
-var aud3 = document.getElementById("myAudio3");
 
-
-buttonElement1.addEventListener('click', function () {
-	console.log('I was clicked!')
+buttonElement1.addEventListener("click", function (){
+document.getElementById("myAudio1").play()
 })
-buttonElement2.addEventListener('click', aud2.play());
-buttonElement3.addEventListener('click', aud3.play());
+buttonElement1.addEventListener("mouseover",function(){
+  document.getElementById("myAudio1").play()
+})
+
+buttonElement2.addEventListener("click", function(){
+  document.getElementById("myAudio2").play()
+})
+buttonElement2.addEventListener("mouseover",function(){
+  document.getElementById("myAudio2").play()
+})
+
+buttonElement3.addEventListener("click", function(){
+  document.getElementById("myAudio3").play()
+})
+buttonElement3.addEventListener("mouseover",function(){
+  document.getElementById("myAudio3").play()
+})
